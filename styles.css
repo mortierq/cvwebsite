@@ -415,3 +415,44 @@ a {
     grid-template-columns: 1fr;
   }
 }
+.pub-card--featured {
+  display: grid;
+  gap: 18px;
+}
+
+.pub-body {
+  display: grid;
+  gap: 6px;
+}
+
+.pub-media {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(27, 27, 27, 0.12);
+  background: rgba(10, 74, 106, 0.04);
+  aspect-ratio: 4 / 3;
+}
+
+.pub-media object,
+.pub-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.pub-authors {
+  margin: 4px 0;
+  color: var(--muted);
+}
+
+.pub-abstract {
+  margin: 6px 0 0;
+}
+
+@media (min-width: 760px) {
+  .pub-card--featured {
+    grid-template-columns: minmax(180px, 220px) 1fr;
+    align-items: start;
+  }
+}
