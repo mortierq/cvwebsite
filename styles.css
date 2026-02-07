@@ -432,7 +432,7 @@ a {
   overflow: hidden;
   background: rgba(10, 74, 106, 0.04);
   height: 100%;
-  min-height: 0;
+  min-height: 220px;
   display: block;
 }
 
@@ -458,7 +458,7 @@ a {
 
 @media (min-width: 760px) {
   .pub-top {
-    grid-template-columns: minmax(200px, 240px) 1fr;
+    grid-template-columns: minmax(240px, 300px) 1fr;
   }
 }
 
