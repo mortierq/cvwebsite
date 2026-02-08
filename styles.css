@@ -419,6 +419,7 @@ a {
   display: grid;
   gap: 18px;
   align-items: stretch;
+  grid-template-columns: minmax(360px, 450px) 1fr;
 }
 
 .pub-meta {
@@ -456,9 +457,9 @@ a {
   hyphens: auto;
 }
 
-@media (min-width: 760px) {
+@media (max-width: 760px) {
   .pub-top {
-    grid-template-columns: minmax(360px, 450px) 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
