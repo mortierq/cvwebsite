@@ -354,6 +354,10 @@ a {
   color: #fff;
 }
 
+.page-hero__card--accent a {
+  color: #fff;
+}
+
 .page-hero__card--accent .meta-row span {
   color: rgba(255, 255, 255, 0.7);
 }
