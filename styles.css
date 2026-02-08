@@ -349,6 +349,15 @@ a {
   letter-spacing: 0.16em;
 }
 
+.page-hero__card--accent {
+  background: rgba(10, 74, 106, 0.88);
+  color: #fff;
+}
+
+.page-hero__card--accent .meta-row span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .pub-grid {
   display: flex;
   flex-direction: column;

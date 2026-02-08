@@ -22,17 +22,13 @@
     <header class="page-hero">
       <div class="page-hero__intro">
         <p class="kicker">Academic Work</p>
-        <h1>Research and Publications</h1>
         <p class="subtitle">
           Research on tensor and neural network methods for quantum many-body
           systems, with large-scale numerical implementations.
         </p>
-        <div class="cta">
-          <a class="btn" href="CV.pdf">Download CV</a>
-          <a class="btn btn--ghost" href="index.html">Home</a>
-        </div>
+        
       </div>
-      <div class="page-hero__card">
+      <div class="page-hero__card page-hero__card--accent">
         <div class="meta-row">
           <span>Focus</span>
           <strong>Quantum many-body physics</strong>
@@ -50,7 +46,7 @@
 
     <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="academic.html" class="is-active">Academic</a>
+      <a href="academic.html" class="is-active">Academic Work</a>
       <a href="cv.html">CV</a>
     </nav>
 
@@ -58,57 +54,6 @@
       <section class="card">
         <h2>Publications</h2>
         <div class="pub-grid">
-          <article class="pub-card pub-card--featured">
-            <div class="pub-top">
-              <a class="pub-media" href="paper1.png">
-                <img src="paper1.png" alt="Fermi surface schematic figure" loading="lazy" />
-              </a>
-              <div class="pub-meta">
-                <h3>
-                  <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.129.206401">
-                    Tensor Networks Can Resolve Fermi Surfaces
-                  </a>
-                </h3>
-                <p class="pub-venue">Physical Review Letters (2022)</p>
-                <p class="pub-authors"><strong>Co-authors:</strong> Norbert Schuch, Frank Verstraete, Jutho Haegeman</p>
-              </div>
-            </div>
-            <p class="pub-abstract">
-              We demonstrate that projected entangled-pair states (PEPS) can represent ground states of critical
-              fermionic systems exhibiting both 1D and 0D Fermi surfaces on a 2D lattice with efficient scaling of the
-              bond dimension. Extrapolating finite-size results for the Gaussian restriction of fermionic PEPS to the
-              thermodynamic limit, the energy precision improves as a power law in bond dimension, illustrating that
-              arbitrary precision can be obtained by increasing bond dimension in a controlled manner. In this process,
-              boundary conditions and system sizes must be chosen carefully so that nonanalyticities of the ansatz,
-              rooted in its nontrivial topology, are avoided.
-            </p>
-          </article>
-          <article class="pub-card pub-card--featured">
-            <div class="pub-top">
-              <a class="pub-media" href="paper2.png">
-                <img src="paper2.png" alt="Entanglement scaling figure" loading="lazy" />
-              </a>
-              <div class="pub-meta">
-                <h3>
-                  <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.266202">
-                    Finite-Entanglement Scaling of 2D Metals
-                  </a>
-                </h3>
-                <p class="pub-venue">Physical Review Letters (2023)</p>
-                <p class="pub-authors"><strong>Co-authors:</strong> Ming-Hao Li, Jutho Haegeman, Nick Bultinck</p>
-              </div>
-            </div>
-            <p class="pub-abstract">
-              We extend the study of finite-entanglement scaling from one-dimensional gapless models to two-dimensional
-              systems with a Fermi surface. In particular, we show that the entanglement entropy of a contractible
-              spatial region with linear size L scales as S ~ L log[ξ f(L/ξ)] in the optimal tensor network, and hence
-              area-law entangled, state approximation to a metallic state, where f(x) is a scaling function which depends
-              on the shape of the Fermi surface and ξ is a finite correlation length induced by the restricted
-              entanglement. Crucially, the scaling regime can be realized with numerically tractable bond dimensions. We
-              also discuss the implications of the Lieb-Schultz-Mattis theorem at fractional filling for tensor network
-              state approximations of metallic states.
-            </p>
-          </article>
           <article class="pub-card pub-card--featured">
             <div class="pub-top">
               <a class="pub-media" href="https://scipost.org/SciPostPhys.18.1.012">
@@ -156,6 +101,58 @@
               be used as a diagnostic for when a lattice model has a local Hamiltonian description.
             </p>
           </article>
+          <article class="pub-card pub-card--featured">
+            <div class="pub-top">
+              <a class="pub-media" href="paper2.png">
+                <img src="paper2.png" alt="Entanglement scaling figure" loading="lazy" />
+              </a>
+              <div class="pub-meta">
+                <h3>
+                  <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.266202">
+                    Finite-Entanglement Scaling of 2D Metals
+                  </a>
+                </h3>
+                <p class="pub-venue">Physical Review Letters (2023)</p>
+                <p class="pub-authors"><strong>Co-authors:</strong> Ming-Hao Li, Jutho Haegeman, Nick Bultinck</p>
+              </div>
+            </div>
+            <p class="pub-abstract">
+              We extend the study of finite-entanglement scaling from one-dimensional gapless models to two-dimensional
+              systems with a Fermi surface. In particular, we show that the entanglement entropy of a contractible
+              spatial region with linear size L scales as S ~ L log[ξ f(L/ξ)] in the optimal tensor network, and hence
+              area-law entangled, state approximation to a metallic state, where f(x) is a scaling function which depends
+              on the shape of the Fermi surface and ξ is a finite correlation length induced by the restricted
+              entanglement. Crucially, the scaling regime can be realized with numerically tractable bond dimensions. We
+              also discuss the implications of the Lieb-Schultz-Mattis theorem at fractional filling for tensor network
+              state approximations of metallic states.
+            </p>
+          </article>
+          <article class="pub-card pub-card--featured">
+            <div class="pub-top">
+              <a class="pub-media" href="paper1.png">
+                <img src="paper1.png" alt="Fermi surface schematic figure" loading="lazy" />
+              </a>
+              <div class="pub-meta">
+                <h3>
+                  <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.129.206401">
+                    Tensor Networks Can Resolve Fermi Surfaces
+                  </a>
+                </h3>
+                <p class="pub-venue">Physical Review Letters (2022)</p>
+                <p class="pub-authors"><strong>Co-authors:</strong> Norbert Schuch, Frank Verstraete, Jutho Haegeman</p>
+              </div>
+            </div>
+            <p class="pub-abstract">
+              We demonstrate that projected entangled-pair states (PEPS) can represent ground states of critical
+              fermionic systems exhibiting both 1D and 0D Fermi surfaces on a 2D lattice with efficient scaling of the
+              bond dimension. Extrapolating finite-size results for the Gaussian restriction of fermionic PEPS to the
+              thermodynamic limit, the energy precision improves as a power law in bond dimension, illustrating that
+              arbitrary precision can be obtained by increasing bond dimension in a controlled manner. In this process,
+              boundary conditions and system sizes must be chosen carefully so that nonanalyticities of the ansatz,
+              rooted in its nontrivial topology, are avoided.
+            </p>
+          </article>
+          
         </div>
       </section>
 
@@ -182,3 +179,4 @@
     </footer>
   </body>
 </html>
+
