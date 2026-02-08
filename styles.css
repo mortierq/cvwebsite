@@ -458,7 +458,7 @@ a {
 
 @media (min-width: 760px) {
   .pub-top {
-    grid-template-columns: minmax(240px, 300px) 1fr;
+    grid-template-columns: minmax(360px, 450px) 1fr;
   }
 }
 
