@@ -215,19 +215,12 @@ main > section:nth-of-type(7) {
   color: #fff;
 }
 
-.photo-placeholder {
+.photo-image {
   width: 100%;
   aspect-ratio: 4 / 5;
   border-radius: 14px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
-  border: 1px dashed rgba(255, 255, 255, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.85rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  object-fit: cover;
+  display: block;
 }
 
 .meta-row {
