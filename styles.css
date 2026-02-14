@@ -421,6 +421,12 @@ a {
   background: transparent;
 }
 
+.page-hero__card--media .carousel,
+.page-hero__card--media .carousel__viewport,
+.page-hero__card--media .carousel__track {
+  min-height: 0;
+}
+
 .carousel {
   position: relative;
   height: 100%;

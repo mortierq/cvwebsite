@@ -122,9 +122,12 @@
           if (!intro || !mediaCard) return;
           if (window.matchMedia("(max-width: 860px)").matches) {
             mediaCard.style.height = "auto";
+            mediaCard.style.maxHeight = "none";
             return;
           }
-          mediaCard.style.height = `${intro.getBoundingClientRect().height}px`;
+          const height = intro.getBoundingClientRect().height;
+          mediaCard.style.height = `${height}px`;
+          mediaCard.style.maxHeight = `${height}px`;
         };
 
         const update = () => {
@@ -139,6 +142,11 @@
             index = (index + 1) % slides.length;
             update();
           }, 4500);
+        }
+
+        if ("ResizeObserver" in window && intro) {
+          const observer = new ResizeObserver(() => syncHeight());
+          observer.observe(intro);
         }
 
         window.addEventListener("resize", syncHeight);
