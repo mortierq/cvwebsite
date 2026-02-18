@@ -546,8 +546,12 @@ a:hover {
   color: rgba(var(--text-on-strong-rgb), 0.72);
 }
 
-.page-hero__card--emerald-dark {
+:root[data-theme="light"] .page-hero__card--emerald-dark {
   background: var(--card-strong);
+}
+
+:root:not([data-theme="light"]) .page-hero__card--emerald-dark {
+  background: rgba(var(--accent-2-rgb), 0.92);
 }
 
 .page-hero__card--media {
