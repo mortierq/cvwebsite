@@ -130,12 +130,16 @@
           mediaCard.style.maxHeight = `${height}px`;
         };
 
+        const queueSync = () => {
+          window.requestAnimationFrame(syncHeight);
+        };
+
         const update = () => {
           track.style.transform = `translateX(-${index * 100}%)`;
         };
 
         update();
-        syncHeight();
+        queueSync();
 
         if (slides.length > 1) {
           setInterval(() => {
@@ -145,12 +149,26 @@
         }
 
         if ("ResizeObserver" in window && intro) {
-          const observer = new ResizeObserver(() => syncHeight());
+          const observer = new ResizeObserver(queueSync);
           observer.observe(intro);
         }
 
-        window.addEventListener("resize", syncHeight);
-        window.addEventListener("load", syncHeight);
+        slides.forEach((slide) => {
+          if (!slide.complete) {
+            slide.addEventListener("load", queueSync, { once: true });
+          }
+        });
+
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(queueSync);
+        }
+
+        window.addEventListener("resize", queueSync);
+        window.addEventListener("pageshow", queueSync);
+        window.addEventListener("load", queueSync);
+
+        setTimeout(queueSync, 80);
+        setTimeout(queueSync, 320);
       })();
     </script>
   </body>
