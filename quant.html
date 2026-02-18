@@ -29,7 +29,7 @@
   <body>
     <div class="background"></div>
 
-    <header class="page-hero">
+    <header class="page-hero page-hero--media">
       <div class="page-hero__intro">
         <p class="kicker">Quant Finance</p>
         <h1>Pricing, Calibration &amp; Risk Analytics</h1>
@@ -125,7 +125,7 @@
             mediaCard.style.maxHeight = "none";
             return;
           }
-          const height = intro.getBoundingClientRect().height;
+          const height = Math.ceil(intro.getBoundingClientRect().height);
           mediaCard.style.height = `${height}px`;
           mediaCard.style.maxHeight = `${height}px`;
         };
