@@ -290,6 +290,7 @@ main > section:nth-of-type(7) {
   border-radius: 18px;
   border: 1px solid var(--card-border);
   box-shadow: var(--shadow);
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -298,15 +299,15 @@ main > section:nth-of-type(7) {
 }
 
 .photo-card--accent {
-  background: var(--card-strong);
-  color: var(--text-on-strong);
+  background: var(--card);
+  color: var(--ink);
 }
 
 .photo-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 0;
   display: block;
 }
 
