@@ -144,7 +144,11 @@ h3 {
   hyphens: auto;
 }
 
-#about p {
+#about p,
+#experience p,
+#experience li,
+#education li,
+#publications li {
   text-align: justify;
   text-justify: inter-word;
   hyphens: auto;
